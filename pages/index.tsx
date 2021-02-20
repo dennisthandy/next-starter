@@ -9,7 +9,7 @@ const Home: React.FC = () => {
     return (
         <Layout title="Home">
             <section className="h-screen flex flex-col justify-center items-center">
-                <h1 className={styles.h1}>Counter</h1>
+                <h1 className={`${styles.h1}`}>Counter</h1>
                 <Counter
                     number={count.toString()}
                     handleIncrement={() => setCount(count + 1)}
