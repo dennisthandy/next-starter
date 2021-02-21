@@ -6,11 +6,12 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint:ts": "eslint */**/*.{jsx,json,ts,tsx} --quiet --fix",
-        "lint:scss": "stylelint */**/*.scss --quiet --fix"
+        "lint:ts": "eslint */**/*.{jsx,json,ts,tsx} --fix",
+        "lint:scss": "stylelint */**/*.scss --fix"
     },
     "pre-commit": [
-        "npm run lint:ts"
+        "lint:ts",
+        "lint:scss"
     ],
     "dependencies": {
         "next": "10.0.7",

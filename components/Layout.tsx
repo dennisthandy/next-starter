@@ -10,10 +10,8 @@ const Layout: React.FC<Props> = ({ title = 'default title', children }) => (
         <Head>
             <title>{title}</title>
         </Head>
-        <main>
-            <Header />
-            {children}
-        </main>
+        <Header />
+        <main>{children}</main>
     </div>
 );
 
