@@ -9,10 +9,11 @@
         "lint:ts": "eslint */**/*.{jsx,json,ts,tsx} --fix",
         "lint:scss": "stylelint */**/*.scss --fix"
     },
-    "pre-commit": [
-        "lint:ts",
-        "lint:scss"
-    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint:ts && npm run lint:scss"
+        }
+    },
     "dependencies": {
         "next": "10.0.7",
         "next-compose-plugins": "^2.2.1",
@@ -31,6 +32,7 @@
         "eslint-config-prettier": "^7.2.0",
         "eslint-plugin-prettier": "^3.3.1",
         "eslint-plugin-react": "^7.22.0",
+        "husky": "^5.0.9",
         "node-sass": "^5.0.0",
         "postcss": "^8.2.6",
         "pre-commit": "^1.2.2",
