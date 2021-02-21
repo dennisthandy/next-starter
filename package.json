@@ -19,7 +19,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "npm run lint:ts && npm run lint:scss"
         }
     },
     "dependencies": {
