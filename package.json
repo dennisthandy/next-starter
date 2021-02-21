@@ -9,14 +9,6 @@
         "lint:ts": "eslint */**/*.{jsx,json,ts,tsx} --quiet --fix",
         "lint:scss": "stylelint */**/*.scss --quiet --fix"
     },
-    "lint-staged": {
-        "*.{js,ts,tsx}": [
-            "eslint --fix"
-        ],
-        "*.scss": [
-            "stylelint --fix"
-        ]
-    },
     "husky": {
         "hooks": {
             "pre-commit": "npm run lint:ts && npm run lint:scss"
@@ -41,7 +33,6 @@
         "eslint-plugin-prettier": "^3.3.1",
         "eslint-plugin-react": "^7.22.0",
         "husky": "^5.0.9",
-        "lint-staged": "^10.5.4",
         "node-sass": "^5.0.0",
         "postcss": "^8.2.6",
         "prettier": "^2.2.1",
