@@ -4,7 +4,7 @@ const AboutL: React.FC = () => {
     return (
         <Layout>
             <section className="h-screen flex items-center justify-center">
-                <h1>This NextJS Boilerplate include following technologies:</h1>
+                <h1>This NextJS Boilerplate include following technologies like</h1>
             </section>
         </Layout>
     );
