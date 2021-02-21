@@ -1,0 +1,7 @@
+.navLink {
+    @apply hover:text-blue-600 hover:underline focus:outline-none;
+}
+
+.active {
+    @apply text-blue-600 pointer-events-none;
+}

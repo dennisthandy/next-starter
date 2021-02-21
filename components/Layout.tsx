@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from './Header';
 
 interface Props {
     title?: string;
@@ -9,7 +10,10 @@ const Layout: React.FC<Props> = ({ title = 'default title', children }) => (
         <Head>
             <title>{title}</title>
         </Head>
-        <main>{children}</main>
+        <main>
+            <Header />
+            {children}
+        </main>
     </div>
 );
 
