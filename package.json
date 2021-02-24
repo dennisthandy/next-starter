@@ -2,19 +2,21 @@
     "name": "next-starter",
     "version": "0.1.0",
     "private": true,
+    "author": "Dennis Thandy",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint:ts": "echo \"running eslint\" && eslint */**/*.{jsx,json,ts,tsx} --fix",
-        "lint:scss": "echo \"running stylint\" && stylelint */**/*.scss --fix"
+        "lint:ts": "echo running eslint... && eslint {components,pages,lib,locales}/**/*.{jsx,json,ts,tsx}",
+        "lint:scss": "echo running stylint... && stylelint styles/**/*.scss"
     },
     "pre-commit": [
         "lint:ts",
         "lint:scss"
     ],
     "dependencies": {
-        "next": "10.0.7",
+        "@react-icons/all-files": "^4.1.0",
+        "next": "^10.0.5",
         "next-compose-plugins": "^2.2.1",
         "next-pwa": "^5.0.5",
         "next-translate": "^1.0.2",

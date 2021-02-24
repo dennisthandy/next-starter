@@ -1,9 +1,9 @@
 import '../styles/globals.css';
 
-// import App from "next/app";
-import type { AppProps /*, AppContext */ } from 'next/app';
+import App from 'next/app';
+import type { AppProps, AppContext } from 'next/app';
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     return <Component {...pageProps} />;
 };
 
@@ -12,11 +12,11 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
 // perform automatic static optimization, causing every page in your app to
 // be server-side rendered.
 //
-// MyApp.getInitialProps = async (appContext: AppContext) => {
-//   // calls page's `getInitialProps` and fills `appProps.pageProps`
-//   const appProps = await App.getInitialProps(appContext);
+MyApp.getInitialProps = async (appContext: AppContext) => {
+    // calls page's `getInitialProps` and fills `appProps.pageProps`
+    const appProps = await App.getInitialProps(appContext);
 
-//   return { ...appProps }
-// }
+    return { ...appProps };
+};
 
 export default MyApp;

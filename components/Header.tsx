@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     };
 
     return (
-        <header className="p-3">
+        <header className="p-3 fixed bg-red-400 w-full">
             <nav>
                 <ul className="flex space-x-5 item-center justify-center">
                     <li>

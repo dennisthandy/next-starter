@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 
-const AboutL: React.FC = () => {
+const About: React.FC = () => {
     return (
         <Layout>
             <section className="h-screen flex items-center justify-center">
@@ -10,4 +10,4 @@ const AboutL: React.FC = () => {
     );
 };
 
-export default AboutL;
+export default About;
