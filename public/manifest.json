@@ -1,6 +1,6 @@
 {
-    "name": "app name",
-    "short_name": "short name",
+    "name": "Next Starter",
+    "short_name": "NS",
     "icons": [
         {
             "src": "/images/icons/android-icon-36x36.png",

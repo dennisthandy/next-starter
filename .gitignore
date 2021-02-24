@@ -32,3 +32,12 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# ignore generated file from next-pwa
+**/public/workbox-*.js
+**/public/sw.js
+**/public/workbox-*.js.map
+**/public/sw.js.map
+
+# ignore generated sitemap
+/public/sitemap.xml
