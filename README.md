@@ -1,5 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+##About
+
+This Boilerplate include following technologies and plugins:
+
+###Technologies
+- [TypeScript](https://www.typescriptlang.org)
+- [SASS](https://sass-lang.com)
+- [Tailwind CSS](https://tailwindcss.com)
+- [React Icons](https://react-icons.github.io/react-icons)
+- [Eslint](https://eslint.org)
+- [Stylelint](https://stylelint.io)
+- [Prettier](https://prettier.io)
+- [Pre-Commit](https://pre-commit.com)
+
+###Plugins
+- [Next PWA](https://www.npmjs.com/package/next-pwa)
+- [Next Translate](https://github.com/vinissimus/next-translate)
+- [Next Compose Plugins](https://www.npmjs.com/package/next-compose-plugins)
+
 ## Getting Started
 
 First, run the development server:
