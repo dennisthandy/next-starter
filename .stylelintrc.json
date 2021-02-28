@@ -8,17 +8,20 @@
                 "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
             }
         ],
+        "declaration-block-trailing-semicolon": null,
+        "no-descending-specificity": null,
         "max-nesting-depth": 3,
         "color-no-invalid-hex": true,
         "value-no-vendor-prefix": true,
         "at-rule-no-vendor-prefix": true,
         "media-feature-name-no-vendor-prefix": true,
-        "declaration-property-value-allowed-list": {
-            "/color$/": ["/^\\$|initial|inherit|transparent|currentColor|darken|lighten|rgba/"],
-            "fill": ["/^\\$|initial|inherit|transparent|currentColor|darken|lighten|rgba/"],
-            "stroke": ["/^\\$|initial|inherit|transparent|currentColor|darken|lighten|rgba/"]
-        },
-        "scss/at-rule-no-unknown": true,
-        "scss/media-feature-value-dollar-variable": "always"
+        "scss/at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
+            }
+        ],
+        "scss/media-feature-value-dollar-variable": "always",
+        "scss/at-import-no-partial-leading-underscore": null
     }
 }
