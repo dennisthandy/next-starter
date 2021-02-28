@@ -1,0 +1,67 @@
+.title {
+    @apply text-center text-xl;
+}
+
+.technoTitle {
+    @apply text-lg font-bold text-center;
+}
+
+.technoList {
+    @apply mt-10 grid gap-8 grid-cols-2 place-items-center;
+
+    @screen lg {
+        @apply grid-cols-4;
+    }
+
+    .technoItem {
+        @apply grid space-y-3 place-items-center;
+
+        .technoIcon {
+            @apply w-20 h-20;
+
+            @screen sm {
+                @apply w-28 h-28;
+            }
+        }
+
+        .technoName {
+            @apply text-xs;
+
+            &:hover {
+                @apply underline;
+            }
+
+            @screen lg {
+                @apply text-base;
+            }
+        }
+    }
+}
+
+.pluginTitle {
+    @apply text-lg font-bold text-center;
+}
+
+.pluginList {
+    @apply mt-10 grid gap-3 place-items-center;
+
+    .pluginItem {
+        @apply flex space-x-3 items-center;
+    }
+
+    .pluginIcon {
+        @apply text-3xl;
+    }
+
+    .pluginName {
+        @apply text-xs;
+
+        &:hover {
+            @apply underline;
+        }
+
+        @screen lg {
+            @apply text-base;
+        }
+    }
+}

@@ -1,1 +1,14 @@
-{}
+{
+    "head": {
+        "title": "Tentang"
+    },
+    "content": {
+        "title": "NextJS Boilerplate ini menggunakan beberapa teknologi dan plugin berikut:",
+        "technologies": {
+            "title": "Teknologi"
+        },
+        "plugins": {
+            "title": "Plugin NextJS"
+        }
+    }
+}

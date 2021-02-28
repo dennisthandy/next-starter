@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+$icons-color: #000000;
+
+button,
+a {
+    @apply focus:outline-none;
+}
+
+.main {
+    @apply pt-24 px-5;
+}
+
+.icons {
+    color: $icons-color;
+    z-index: -1;
+    @apply transform scale-125;
+}

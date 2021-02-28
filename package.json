@@ -7,8 +7,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint:ts": "echo running eslint... && eslint {components,pages,lib,locales}/**/*.{jsx,json,ts,tsx}",
-        "lint:scss": "echo running stylint... && stylelint styles/**/*.scss"
+        "lint:ts": "echo running eslint check ... && eslint {components,pages,lib,locales}/**/*.{jsx,json,ts,tsx}",
+        "lint:scss": "echo running stylint check ... && stylelint styles/**/*.scss"
     },
     "pre-commit": [
         "lint:ts",

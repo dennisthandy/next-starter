@@ -1,10 +1,12 @@
 import Head from 'next/head';
+// import Footer from './Footer';
 import Header from './Header';
 
 interface Props {
     title?: string;
     description?: string;
     keywords?: string;
+    children: JSX.Element;
 }
 
 const Layout: React.FC<Props> = ({
@@ -29,6 +31,7 @@ const Layout: React.FC<Props> = ({
             <meta name="msapplication-TileColor" content="#ffffff" />
             <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png" />
             <meta name="msapplication-config" content="/browserconfig.xml" />
+            <meta name="theme-color" content="#ffffff" />
 
             <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png" />
@@ -46,7 +49,8 @@ const Layout: React.FC<Props> = ({
             <link rel="manifest" href="/manifest.json" />
         </Head>
         <Header />
-        <main className="pt-16">{children}</main>
+        <main className="main">{children}</main>
+        {/* <Footer /> */}
     </div>
 );
 

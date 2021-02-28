@@ -1,1 +1,8 @@
-{}
+{
+    "header": {
+        "nav": {
+            "home": "Beranda",
+            "about": "Tentang"
+        }
+    }
+}

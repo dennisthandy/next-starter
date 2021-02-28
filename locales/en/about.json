@@ -1,1 +1,14 @@
-{}
+{
+    "head": {
+        "title": "About"
+    },
+    "content": {
+        "title": "This NextJS Boilerplate include following technologies and plugins:",
+        "technologies": {
+            "title": "Technologies"
+        },
+        "plugins": {
+            "title": "NextJS Plugins"
+        }
+    }
+}

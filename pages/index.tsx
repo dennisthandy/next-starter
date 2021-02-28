@@ -17,6 +17,9 @@ const Home: React.FC = () => {
                     handleIncrement={() => setCount(count + 1)}
                     handleReset={() => setCount(0)}
                 />
+                <p className="text-2xl mt-10 text-center">
+                    Hope yout enjoy this next.js boilerplate <span className="text-2xl">😀</span>
+                </p>
             </section>
         </Layout>
     );

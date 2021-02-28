@@ -1,5 +1,10 @@
 {
     "head": {
         "title": "Beranda"
+    },
+    "h1": "NextJS Boilerplate",
+    "counter": {
+        "increment": "Tambah",
+        "reset": "Reset"
     }
 }
